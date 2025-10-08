@@ -25,7 +25,7 @@ fun DaftarScreen(
     ) {
         OutlinedTextField(
             value = nim,
-            onValueChange = { new -> nim = new.filter { it.isDigit() } }, // NIM hanya angka
+            onValueChange = { new -> nim = new.filter { it.isDigit() } },
             label = { Text("NIM") },
             modifier = Modifier.fillMaxWidth()
         )
